@@ -1,0 +1,7 @@
+<library path="lib/libdnn_detector_nodelet">
+  <class name="dnn_detector/DNNDetectorNodelet" type="dnn_detector::DNNDetectorNodelet" base_class_type="nodelet::Nodelet">
+    <description>
+      A nodelet wrapper for the dnn_detector.
+    </description>
+  </class>
+</library>

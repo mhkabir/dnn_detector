@@ -1,0 +1,8 @@
+<launch> 
+
+	<node pkg="perception_fake" type="generate_evidence" respawn="false" name="fake_barcodes" output="screen"/>
+	
+	<include file="$(find perception_core)/launch/start.launch" />
+	<include file="$(find perception_viz)/launch/start.launch" />
+	
+</launch>

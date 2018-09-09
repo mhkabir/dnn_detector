@@ -1,0 +1,25 @@
+<package format="2">
+  <name>dnn_detector</name>
+  <version>1.0.0</version>
+  <description>
+     dnn_detector
+  </description>
+  <maintainer email="kabir@uasys.io">Mohammed Kabir</maintainer>
+  <license>BSD 3-Clause</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nodelet</depend>
+  <depend>problib</depend>
+  <depend>perception_msgs</depend>
+
+  <export>
+    <nodelet plugin="${prefix}/dnn_detector_nodelet.xml"/>
+  </export>
+
+
+</package>
