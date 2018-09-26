@@ -46,6 +46,8 @@ include_directories(
   /home/kabir/catkin_ws/devel/include
   /home/kabir/catkin_ws/src/perception/armadillo_matrix/include
   /home/kabir/catkin_ws/src/perception/problib/include
+  /home/kabir/catkin_ws/src/image_processing/vision_opencv/cv_bridge/include
+  /home/kabir/catkin_ws/src/image_processing/image_common/image_transport/include
   /opt/ros/kinetic/include
 )
 

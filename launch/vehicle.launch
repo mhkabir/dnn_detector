@@ -4,9 +4,8 @@
 		<param name= "network/config_path" value = "$(find dnn_detector)/models/barcode.cfg" />
 		<param name= "network/model_path" value = "$(find dnn_detector)/models/barcode.weights" />
 		<param name= "network/classes_path" value = "$(find dnn_detector)/models/classes.txt" />
-		<remap from="/camera/image_raw" to="/detector_camera/image_raw" />
-		<remap from="/camera/camera_info" to="/detector_camera/camera_info" />
-
+                <remap from="/camera/image_raw" to="/skyaware_driver/cam3/image_raw" />
+		<remap from="/camera/camera_info" to="/skyaware_driver/cam3/camera_info" />
 		<param name= "use_rangefinder" value="false"/>
 		<remap from="range" to="/mavros/distance_sensor/tfmini" />
 		

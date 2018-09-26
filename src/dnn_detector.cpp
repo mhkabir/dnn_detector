@@ -73,7 +73,7 @@ DNNDetector::DNNDetector(const ros::NodeHandle &nh, const ros::NodeHandle &nh_pr
     // Load configuration files
 	network_ = cv::dnn::readNet(model_path, config_path);
 
-    network_.setPreferableBackend(cv::dnn::DNN_BACKEND_INFERENCE_ENGINE);
+    network_.setPreferableBackend(cv::dnn::DNN_BACKEND_OPENCV);
     network_.setPreferableTarget(cv::dnn::DNN_TARGET_OPENCL);
 
     // Get network configuration
